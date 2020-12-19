@@ -1,0 +1,6 @@
+create table usuarios (
+ id varchar(255),
+ email varchar(255),
+ password varchar(255)
+);insert into usuarios (id, email, password) values ("40abb960-fd25-471c-ad24-a6facf993de5", "xxx@gmail.com", "12345");
+insert into usuarios (id, email, password) values ("35f3e059-01a9-4d55-ac09-495e7b6612db","yyy@gmail.com", "67890");

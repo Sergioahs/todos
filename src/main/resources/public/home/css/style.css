@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor padre */
+.container {
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	min-height: 100vh;
+
+	background-color: lightblue;
+
+	cursor: default;
+}
+
+/* contenedores hijos */
+.data-card-wraper {
+	overflow: hidden;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	width: 30%;
+
+	color: rgb(100, 100, 100);
+}
+
+.todos-wraper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 70%;
+}
+
+/* Tarjeta para insertar los todos */
+.data-card {
+
+	display: flex;
+	flex-flow: column;
+
+	margin-top: 5vh;
+	width: 20vw;
+	height: 20vw;
+
+	border-radius: 10px;
+
+	background-color: #fff;
+}
+
+/* Información del todo */
+.info {
+
+	height: 80%;
+}
+
+.info > h1 {	
+	border-bottom: 1px solid #bdbdbd;
+	height: 25%;
+	font-size: 25px;
+}
+
+.info > input {
+	border: 0;
+	height: 25%
+}
+
+.info > textarea  {
+	border: 0; 
+	height: 50%;
+}
+
+/* Boton de enviar el todo */
+.btn-wraper {
+	overflow: hidden;
+	height: 20%;
+	border-top: 1px solid #bdbdbd;
+}
+
+.btn {
+
+	color: #fafafa;
+	width: 40%;
+	height: 75%;
+
+	border-radius: 10px;
+
+	background-color: #2196f3;
+}
+
+/*
+---------------------------------
+Tarjetas de todos
+---------------------------------
+*/
+
+.info-container {
+	flex-flow: column;
+	height: 75%;
+}
+
+.info-container > .nm {
+	height: 20%;
+}
+
+.info-container > .ds {
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.id {
+	display: none;
+}
+
+.borrar {
+	color: #bdbdbd;
+	width: 50%;	
+	height: 100%;
+}
+
+.editar {
+	width: 50%;
+	height: 100%;
+}
+
+/*
+Estilos generales
+*/
+
+.width-100 {
+	width: 100%;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.size-1-5 {
+	font-size: 1.1rem;
+}
+
+.wrap {
+	flex-flow: wrap;
+}
