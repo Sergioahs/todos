@@ -20,13 +20,13 @@ public class App {
             return null;
         });
 
-        // Obtener citas
+        // Obtener todos
         get("/todo", (req, res) -> {
 
             return gson.toJson(DAO.getTodos());
         });
 
-        // Guardar cita en base de datos
+        // Guardar todos
         post("/todo", (req, res) -> {
 
             String data = req.body();
@@ -38,12 +38,12 @@ public class App {
             return DAO.crearTodo(todo);
         });
         
-        // Eliminar cita
+        // Eliminar todo
         delete("/todo/:id", (req, res) -> {
             return DAO.eliminarTodo(req.params("id"));
         });
 
-        // Actualizar cita
+        // Actualizar todo
         put("/todo", (req, res) -> {
             String data = req.body();
             Todo todo = gson.fromJson(data, Todo.class);
